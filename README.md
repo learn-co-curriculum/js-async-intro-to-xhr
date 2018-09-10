@@ -1,10 +1,12 @@
 ## JavaScript XHR
 
+
 The XMLHttpRequest object, or XHR, is a JavaScript API that allows us to
 transfer data between a client and a server. This makes it possible to request
 and receive web page updates without refreshing, leading to an improved
 experience for users. In this lesson, we will be exploring the use of XHR by
 using it to access GitHub.
+
 
 ## Objectives
 
@@ -48,7 +50,8 @@ _response_.
 
 The first thing we want to do is get a list of our public repositories. A
 little research on the [Github List Repositories API][user_repos] tells us
-we can request a user's public repositories via a `GET` request to `https://api.github.com/users/:username/repos`, so let's try it out.
+we can request a user's public repositories via a `GET` request to 
+`https://api.github.com/users/:username/repos`, so let's try it out.
 
 **Top-tip:** API documentation will often use a colon to precede a dynamic
 value in a RESTful URL, like `:username`. That's your hint to supply your own
@@ -325,11 +328,14 @@ parse the `responseText` into JSON and display it on the page.
 - [MDN: JSON.Parse](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse)
 - [MDN: Using data attributes](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_data_attributes)
 
+
+[xhr]: https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest
 [api]: https://developer.github.com/v3/repos/
 [user_repos]: https://developer.github.com/v3/repos/#list-user-repositories
 [parse]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse
 [data]: https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_data_attributes
 [commits]: https://developer.github.com/v3/repos/commits/
 [api_wiki]: https://en.wikipedia.org/wiki/Application_programming_interface
+
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/javascript-xhr'>XHR</a> on Learn.co and start learning to code for free.</p>
